@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>KPOP</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="navigation" id="navigation">
+            <div class="logo-section">
+                <div class="logo-img">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <h1>LuminoX</h1>
+            </div>
+            <div class="navlinks">
+                <li>Company</li>
+                <li>News</li>
+                <li>Artist</li>
+                <li>Audition</li>
+            </div>
+
+            <div class="right-navlinks">
+                <li>Join</li>
+                <li class="highlight">Login</li>
+            </div>
+            <div class="menubar" onclick="showMenuCont()">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </div>
+
+
+        <div class="menu-content" id="menu-content">
+            <div class="navlinks">
+                <li>Company</li>
+                <li>News</li>
+                <li>Artist</li>
+                <li>Audition</li>
+            </div>
+
+            <div class="right-navlinks">
+                <li>Join</li>
+                <li class="highlight">Login</li>
+            </div>
+        </div>
+
+        
+        <!-- banner -->
+        <div class="banner">
+            <div class="banner-img">
+                <img src="./img/bg1.png" alt="">
+            </div>
+
+            <div class="banner-details">
+                <h1>Leader in Entertainment</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio, necessitatibus excepturi.</p>
+                <button>Explore Now</button>
+            </div>
+            
+        </div>
+        
+
+        <div class="second-container">
+            <div class="card-holder" onclick="viewPop1()">
+                <div class="img-cont">
+                    <img src="./img/1.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>BTS (Bangtan Sonyeondan)</small> <ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+            <div class="card-holder" onclick="viewPop2()">
+                <div class="img-cont">
+                    <img src="./img/2.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>BLACKPINK</small> <ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+
+            <div class="card-holder" onclick="viewPop3()">
+                <div class="img-cont">
+                    <img src="./img/3.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>EXO</small> <ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+
+            <div class="card-holder" onclick="viewPop4()">
+                <div class="img-cont">
+                    <img src="./img/4.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>TWICE</small> <ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+
+            <div class="card-holder" onclick="viewPop5()">
+                <div class="img-cont">
+                    <img src="./img/5.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>NCT (Neo Culture Technology)</small> <ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+    
+            <div class="card-holder" onclick="viewPop6()">
+                <div class="img-cont">
+                    <img src="./img/6.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>Red Velvet</small> <ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+    
+            <div class="card-holder" onclick="viewPop7()">
+                <div class="img-cont">
+                    <img src="./img/7.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>GOT7</small><ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+        
+            <div class="card-holder" onclick="viewPop8()">
+                <div class="img-cont">
+                    <img src="./img/8.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="artist-name"><small>Mamamoo</small> <ion-icon name="heart"></ion-icon></div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- popup -->
+    <div class="popup-cont" id="pop1">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>BTS (Bangtan Sonyeondan)</h1>
+            <p>BTS is one of the most globally recognized K-pop groups. They are known for their powerful music, socially conscious lyrics, and incredible stage presence. BTS has a massive international fanbase and has achieved immense success worldwide.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-cont" id="pop2">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>BLACKPINK</h1>
+            <p>BLACKPINK is a popular girl group known for their edgy style and catchy songs. They are recognized for their fierce performances and have a significant following both in South Korea and internationally.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+
+     <div class="popup-cont" id="pop3">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>EXO</h1>
+            <p>EXO is a boy band known for their impressive vocal and dance skills. They have a unique concept of being divided into two subunits, EXO-K and EXO-M, to cater to both Korean and Chinese markets.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-cont" id="pop4">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>TWICE</h1>
+            <p>TWICE is a girl group known for their infectious and cheerful music. They are famous for their catchy tunes and colorful music videos, which have garnered them a large fanbase.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-cont" id="pop5">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>NCT (Neo Culture Technology)</h1>
+            <p>NCT is a unique group with a rotational concept, meaning they have different subunits and members that can change over time. This concept allows for various musical styles and combinations within the group.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-cont" id="pop6">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>Red Velvet</h1>
+            <p>Red Velvet is a girl group known for their versatility, as they can effortlessly switch between different music genres and concepts. They have a distinct and captivating style.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-cont" id="pop7">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>GOT7</h1>
+            <p>GOT7 is a boy band known for their energetic performances and diverse discography. They are recognized for their close bond with fans and their involvement in composing and producing their music.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-cont" id="pop8">
+        <div class="close-pop" onclick="closePopup()">
+            <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="popup" >
+            <h1>Mamamoo</h1>
+            <p>Mamamoo is a girl group known for their powerful vocals and soulful music. They have gained acclaim for their live performances and their ability to harmonize seamlessly.</p>
+            <div class="pop-btn">
+                <button>Watch Group</button>
+                <button onclick="closePopup()" class="btn-active">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- popup -->
+
+
+    <footer>
+
+        <div class="logo-section">
+            <div class="logo-img">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <h1>LuminoX</h1>
+        </div>
+
+        <div class="footer-social">
+            <div class="social-med">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-links">
+                <a href="">Info</a>
+                <a href="">Support</a>
+                <a href="">Marketing</a>
+            </div>
+
+            <div class="footer-terms">
+                <a href="">Terms of used</a>
+                <a href="">Privacy & Policy</a>
+            </div>
+            <div class="footer-copy">
+                <small>&copy; 2023 LuminoX</small>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
