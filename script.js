@@ -77,4 +77,5 @@ function viewPop8(){
 let menuCont = document.getElementById('menu-content');
 function showMenuCont(){
     menuCont.classList.toggle('show-menu-content');
+    document.getElementById('navigation').classList.add('navbg');
 }
